@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор ремонта квартиры</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="main-title-window">
+      <h1>Калькулятор ремонта квартиры</h1>
+      <p>Узнайте стоимость прямо сейчас!</p>
+    </div>
+  </header>
+<main>
+  <form id="calcForm">
+    <label>Площадь (м²): <input type="number" id="area" required></label>
+    <label>Тип работ:
+      <select id="workType">
+        <option value="cosmetic">Косметический</option>
+        <option value="capital">Капитальный</option>
+      </select>
+    </label>
+    <div id="result"></div>
+  </form>
+</main>
+  <footer>
+    <p>&copy; 2025 Твой ремонт</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<input type="number" id="area" required min="1" max="1000">

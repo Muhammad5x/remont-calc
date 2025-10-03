@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(-45deg, #000000, #10141a, #1441dc, #0a0f1e, #000000);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 25vh;
+}
+
+.main-title-window {
+  display: inline-block;
+  padding: 0.8em 2.2em 0.7em 2.2em;
+  border-radius: 16px;
+  border: 4px solid #162447;
+  background: linear-gradient(90deg, #11131a 0%, #1441dc 100%);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(28,28,45,0.12);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-title-window h1 {
+  margin: 0 0 0.27em 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.main-title-window p {
+  margin: 0;
+  color: #bcd2ef;
+  font-size: 1.07em;
+  font-weight: 500;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calcForm {
+  background: rgba(16,20,30,0.97);
+  border-radius: 16px;
+  box-shadow: 0 6px 32px #10141a60;
+  border: 1.5px solid #23336b;
+  padding: 2em 2.5em;
+  min-width: 320px;
+  max-width: 520px;
+  width: 100%;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  width: 100%;
+  color: #e4eaff;
+}
+
+input, select {
+  padding: 0.6em 1em;
+  font-size: 1em;
+  width: 100%;
+  background: #151a26;
+  color: #eaf0ff;
+  box-sizing: border-box;
+  margin-top: 0.3em;
+  border-radius: 6px;
+  border: 1px solid #23336b;
+}
+
+#calcForm button, button {
+  background: #000 !important;
+  color: #eaf0ff !important;
+  border: none !important;
+  padding: 1em 2em !important;
+  border-radius: 8px !important;
+  font-size: 1.1em !important;
+  margin-top: 1em !important;
+  cursor: pointer !important;
+  font-weight: bold !important;
+  transition: background 0.2s !important;
+  box-shadow: 0 2px 8px rgba(20,40,100,0.12) !important;
+  outline: none !important;
+}
+#calcForm button:hover, button:hover {
+  background: #162447 !important;
+}
+
+#result {
+  margin-top: 1.5em;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-align: center;
+  color: #bcd2ef;
+}
+#result {
+  margin-top: 1.5em;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-align: center;
+  color: #bcd2ef;
+  max-width: 100%;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
